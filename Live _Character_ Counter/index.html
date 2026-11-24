@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 03 - Character Counter</title>
+
+    <style>
+                 .popup {
+    display: none;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button
+{
+       padding: 10px 30px;
+       background-color: antiquewhite;
+       font-size: 10px;
+}
+    </style>
+  </head>
+
+
+  <body>
+    <h1>Live Character Counter</h1>
+
+    <textarea
+      id="message"
+      placeholder="Write something..."
+      rows="5"
+      cols="40"
+    ></textarea>
+
+    <div id="popup" class="popup">
+    <h2>⚠️ Limit Reached!</h2>
+    <p>You have reached the maximum limit of 100 characters.</p>
+    <button id="closePopup">OK</button>
+</div>
+
+    <p>Total Characters: <span id="total">0</span></p>
+
+    <p>Remaining Characters: <span id="remaining">100</span></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
